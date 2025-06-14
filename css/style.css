@@ -62,6 +62,14 @@ p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
+.nav-links a:hover{
+    color: #d7aa06;
+    text-decoration:underline;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .hamburger{
     display: none;
     cursor:pointer;
