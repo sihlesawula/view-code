@@ -7,6 +7,7 @@ body{
 }
 
 .navbar{
+    height: 200px;
     display:flex;
     position:fixed;
     justify-content: space-between;
@@ -337,7 +338,7 @@ p{
 
 
 
-/* CSS */
+
 .video-hero {
   position: relative;
   height: 60vh;
