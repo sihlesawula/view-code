@@ -1,4 +1,6 @@
-document.getElementById("hamburger-icon").addEventListener("click", function(){
-    document.getElementById("nav-links").classList.toggle("active")
-});
+const menu = document.getElementById("menu");
+const nav = document.getElementById("nav");
 
+menu.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
