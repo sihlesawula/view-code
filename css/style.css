@@ -268,6 +268,163 @@ nav a:hover {
 
 
 
+/* WHY US */
+
+.why-us {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.why-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.why-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+/* CLIENTS */
+
+.clients {
+  padding: 60px 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.client-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.client-logos img {
+  width: 120px;
+  opacity: 0.7;
+}
+
+
+/* STATS */
+
+.stats {
+  background: #111;
+  color: white;
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  color: orange;
+}
+
+
+/* PROCESS */
+
+.process {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.step {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.step span {
+  display: inline-block;
+  background: orange;
+  color: black;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+
+
+/* FAQ */
+
+.faq {
+  background: #f5f5f5;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.faq-item {
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: left;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+/* CTA */
+
+.cta-banner {
+  background: linear-gradient(to right,#ff9800,#ffb300);
+  color: black;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.cta-banner h2 {
+  margin-bottom: 10px;
+}
+
+
+/* SKILLS */
+
+.skills {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.skills-box span {
+  background: #111;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+
+
+
 /* CONTACT */
 
 .contact {
