@@ -424,6 +424,185 @@ nav a:hover {
 
 
 
+/* CONTACT */
+
+.contact {
+  padding: 100px 20px;
+  background: #111;
+  color: white;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+
+/* LEFT BRAND */
+
+.contact-brand img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.contact-brand h2 {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.contact-brand p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 15px;
+  color: orange;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+
+/* FORM */
+
+.contact-form {
+  background: white;
+  color: black;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  border-color: orange;
+}
+
+
+/* FOOTER */
+
+.footer {
+  background: #000;
+  color: white;
+  padding: 60px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 30px;
+}
+
+.footer-box h3,
+.footer-box h4 {
+  color: orange;
+  margin-bottom: 15px;
+}
+
+.footer-box p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+
+/* LINKS */
+
+.footer-box ul {
+  list-style: none;
+}
+
+.footer-box ul li {
+  margin-bottom: 8px;
+}
+
+.footer-box ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-box ul li a:hover {
+  color: orange;
+}
+
+
+/* NEWSLETTER */
+
+.footer-box form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer-box form input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.footer-box form button {
+  background: orange;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    margin-top: 30px;
+  }
+
+}
+
+
+
 
 /* CONTACT */
 
