@@ -251,6 +251,80 @@ nav a:hover {
   font-weight: bold;
 }
 
+/* BUDGET SECTION */
+.budget {
+  padding: 70px 20px;
+  background: #0f0f0f;
+  color: #fff;
+  text-align: center;
+}
+
+.budget h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.budget p {
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+/* SLIDER BOX */
+.slider-box {
+  max-width: 500px;
+  margin: auto;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #2a2a2a;
+}
+
+/* RANGE SLIDER */
+input[type="range"] {
+  width: 100%;
+  appearance: none;
+  height: 6px;
+  background: #333;
+  border-radius: 5px;
+  outline: none;
+  margin: 20px 0;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #00ffae;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* OUTPUT */
+.budget-output {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: #00ffae;
+  font-weight: bold;
+}
+
+.package-recommendation {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.package-recommendation span {
+  color: #00ffae;
+  font-weight: bold;
+}
+
+.hint {
+  font-size: 13px;
+  color: #888;
+  margin-top: 10px;
+}
+
 
 /* RESPONSIVE */
 
