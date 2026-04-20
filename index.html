@@ -180,34 +180,6 @@
 
   </div>
 
-  <section class="budget">
-
-    <h2>What's Your Budget?</h2>
-  
-    <div class="slider-box">
-  
-      <input 
-        type="range" 
-        min="1500" 
-        max="10000" 
-        step="500" 
-        value="4500"
-        id="budgetSlider"
-        name="budget"
-      >
-  
-      <div class="budget-output">
-        Selected Budget: <span id="budgetValue">R4,500</span>
-      </div>
-  
-      <div class="package-recommendation">
-        Recommended Package: <span id="packageText">Starter</span>
-      </div>
-  
-    </div>
-  
-  </section>
-
 </section>
 
 
@@ -389,15 +361,25 @@
 
 <section class="contact-section" id="contact">
 
-  <div class="contact-wrapper">
+  <div class="contact-container">
 
-    <!-- LEFT SIDE (Branding + Socials) -->
+    <!-- ================= LEFT SIDE ================= -->
     <div class="contact-left">
 
-      <img src="logo.png" alt="Company Logo" class="logo">
+      <img src="logo.png" alt="Logo" class="logo">
 
       <h2>OFFENSIV APPAREL</h2>
-      <p>We build modern websites that turn visitors into customers.</p>
+
+      <p>
+        We design and develop modern websites that help businesses attract,
+        convert, and grow online.
+      </p>
+
+      <div class="contact-info">
+        <p>📍 South Africa</p>
+        <p>📧 offensivapparel@gmail.com</p>
+        <p>📞 +27 83 123 4567</p>
+      </div>
 
       <div class="socials">
         <a href="#" target="_blank">Instagram</a>
@@ -408,7 +390,7 @@
 
     </div>
 
-    <!-- RIGHT SIDE (FORM) -->
+    <!-- ================= RIGHT SIDE ================= -->
     <div class="contact-right">
 
       <h2>Get In Touch</h2>
@@ -418,11 +400,12 @@
 
         <input type="text" id="name" placeholder="Your Name" required>
         <input type="email" id="email" placeholder="Your Email" required>
-
         <textarea id="message" placeholder="Tell us about your project"></textarea>
 
-        <!-- Budget Slider -->
+        <!-- BUDGET SLIDER -->
         <div class="budget-box">
+
+          <label>Your Budget</label>
 
           <input 
             type="range" 
@@ -493,23 +476,6 @@
 
     </div>
 
-
-    <!-- NEWSLETTER -->
-    <div class="footer-box">
-
-      <h4>Newsletter</h4>
-
-      <p>Subscribe for updates and offers.</p>
-
-      <form>
-
-        <input type="email" placeholder="Your Email">
-
-        <button>Subscribe</button>
-
-      </form>
-
-    </div>
 
   </div>
 

@@ -1,47 +1,71 @@
+// =====================
 // MENU TOGGLE
+// =====================
 const menu = document.getElementById("menu");
 const nav = document.getElementById("nav");
 
-menu.addEventListener("click", () => {
-  nav.classList.toggle("active");
-});
+if (menu && nav) {
+  menu.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+}
 
-
-// BUDGET SLIDER
+// =====================
+// ELEMENTS
+// =====================
 const slider = document.getElementById("budgetSlider");
 const valueText = document.getElementById("budgetValue");
 const packageText = document.getElementById("packageText");
+const form = document.getElementById("contactForm");
 
-// Detect package based on value
+// STOP if elements not found
+if (!slider || !valueText || !packageText || !form) {
+  console.warn("Contact form elements missing");
+}
+
+// =====================
+// LIVE STATE
+// =====================
+let currentBudget = slider ? Number(slider.value) : 4500;
+
+// =====================
+// PACKAGE LOGIC
+// =====================
 function getPackage(value) {
   if (value < 3000) return "Starter";
   if (value < 6500) return "Professional";
   return "Premium";
 }
 
-// live update slider
+// =====================
+// SLIDER UPDATE
+// =====================
 if (slider) {
   slider.addEventListener("input", function () {
-    const value = Number(this.value);
+    currentBudget = Number(this.value);
 
-    valueText.textContent = "R" + value.toLocaleString();
-    packageText.textContent = getPackage(value);
+    if (valueText) {
+      valueText.textContent = "R" + currentBudget.toLocaleString();
+    }
+
+    if (packageText) {
+      packageText.textContent = getPackage(currentBudget);
+    }
   });
 }
 
-
-// WHATSAPP FORM SUBMIT
-const form = document.getElementById("contactForm");
-
+// =====================
+// WHATSAPP SUBMIT
+// =====================
 if (form) {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+    const name = document.getElementById("name")?.value || "";
+    const email = document.getElementById("email")?.value || "";
+    const message = document.getElementById("message")?.value || "";
 
-    const budget = slider.value;
+    const budget = currentBudget;
     const packageType = getPackage(budget);
 
     const whatsappMessage =
@@ -51,8 +75,8 @@ Name: ${name}
 Email: ${email}
 Message: ${message}
 
-Budget: R${budget}
-Recommended: ${packageType}`;
+Budget: R${budget.toLocaleString()}
+Recommended Package: ${packageType}`;
 
     const phoneNumber = "27748403931";
 

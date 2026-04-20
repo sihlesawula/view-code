@@ -498,22 +498,23 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 
-/* CONTACT SECTION */
+/* SECTION */
 .contact-section {
   padding: 80px 20px;
   background: #0f0f0f;
   color: #fff;
 }
 
-.contact-wrapper {
+/* CONTAINER */
+.contact-container {
   display: flex;
+  gap: 40px;
   max-width: 1100px;
   margin: auto;
-  gap: 40px;
   flex-wrap: wrap;
 }
 
-/* LEFT SIDE */
+/* ================= LEFT ================= */
 .contact-left {
   flex: 1;
   min-width: 280px;
@@ -531,11 +532,17 @@ input[type="range"]::-webkit-slider-thumb {
 
 .contact-left p {
   color: #aaa;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-/* SOCIAL LINKS */
+.contact-info p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+/* SOCIALS */
 .socials {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -544,20 +551,19 @@ input[type="range"]::-webkit-slider-thumb {
 .socials a {
   color: #00ffae;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 .socials a:hover {
   color: #fff;
 }
 
-/* RIGHT SIDE */
+/* ================= RIGHT ================= */
 .contact-right {
   flex: 1;
   min-width: 320px;
   background: #1a1a1a;
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 12px;
   border: 1px solid #2a2a2a;
 }
 
@@ -591,7 +597,7 @@ textarea {
   resize: none;
 }
 
-/* BUDGET BOX */
+/* BUDGET */
 .budget-box {
   margin-top: 10px;
 }
@@ -601,7 +607,6 @@ input[type="range"] {
 }
 
 button {
-  margin-top: 10px;
   padding: 12px;
   background: #00ffae;
   border: none;
