@@ -387,52 +387,58 @@
 
 
 
-<!-- CONTACT -->
+<section class="contact-section" id="contact">
 
-<section class="contact" id="contact">
+  <div class="contact-wrapper">
 
-  <div class="contact-container">
+    <!-- LEFT SIDE (Branding + Socials) -->
+    <div class="contact-left">
 
-    <!-- LEFT BRAND -->
-    <div class="contact-brand">
+      <img src="logo.png" alt="Company Logo" class="logo">
 
-      <img src="img/logo.png" alt="Syntax District Designs Logo">
-
-      <h2>Syntax District Designs</h2>
-
-      <p>
-        We build modern, high-performing websites that help businesses grow
-        and stand out online.
-      </p>
+      <h2>OFFENSIV APPAREL</h2>
+      <p>We build modern websites that turn visitors into customers.</p>
 
       <div class="socials">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">WhatsApp</a>
-        <a href="#">LinkedIn</a>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">TikTok</a>
+        <a href="#" target="_blank">WhatsApp</a>
+        <a href="#" target="_blank">LinkedIn</a>
       </div>
 
     </div>
 
+    <!-- RIGHT SIDE (FORM) -->
+    <div class="contact-right">
 
-    <!-- RIGHT FORM -->
-    <div class="contact-form">
+      <h2>Get In Touch</h2>
+      <p>Tell us about your project and budget</p>
 
-      <h3>Send Us A Message</h3>
+      <form id="contactForm">
 
-      <form>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
 
-        <input type="text" placeholder="Full Name" required>
+        <textarea id="message" placeholder="Tell us about your project"></textarea>
 
-        <input type="email" placeholder="Email Address" required>
+        <!-- Budget Slider -->
+        <div class="budget-box">
 
-        <input type="text" placeholder="Subject">
+          <input 
+            type="range" 
+            min="1500" 
+            max="10000" 
+            step="500" 
+            value="4500"
+            id="budgetSlider"
+          >
 
-        <textarea placeholder="Your Message" rows="5"></textarea>
+          <p>Budget: <span id="budgetValue">R4,500</span></p>
+          <p>Recommended: <span id="packageText">Starter</span></p>
 
-        <button type="submit" class="btn-primary">
-          Send Message
-        </button>
+        </div>
+
+        <button type="submit">Send via WhatsApp</button>
 
       </form>
 
@@ -441,7 +447,6 @@
   </div>
 
 </section>
-
 
 
 <!-- FOOTER -->

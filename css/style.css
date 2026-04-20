@@ -498,85 +498,121 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 
-/* CONTACT */
-
-.contact {
-  padding: 100px 20px;
-  background: #111;
-  color: white;
+/* CONTACT SECTION */
+.contact-section {
+  padding: 80px 20px;
+  background: #0f0f0f;
+  color: #fff;
 }
 
-.contact-container {
+.contact-wrapper {
+  display: flex;
   max-width: 1100px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
+/* LEFT SIDE */
+.contact-left {
+  flex: 1;
+  min-width: 280px;
+}
 
-/* LEFT BRAND */
-
-.contact-brand img {
-  width: 120px;
+.contact-left .logo {
+  width: 80px;
   margin-bottom: 15px;
 }
 
-.contact-brand h2 {
-  color: orange;
+.contact-left h2 {
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.contact-brand p {
-  color: #ccc;
-  line-height: 1.6;
-}
-
-.socials {
-  margin-top: 20px;
-}
-
-.socials a {
-  display: inline-block;
-  margin-right: 15px;
-  color: orange;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.socials a:hover {
-  text-decoration: underline;
-}
-
-
-/* FORM */
-
-.contact-form {
-  background: white;
-  color: black;
-  padding: 40px;
-  border-radius: 12px;
-}
-
-.contact-form h3 {
+.contact-left p {
+  color: #aaa;
   margin-bottom: 20px;
 }
 
-.contact-form form input,
-.contact-form form textarea {
-  width: 100%;
+/* SOCIAL LINKS */
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socials a {
+  color: #00ffae;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #fff;
+}
+
+/* RIGHT SIDE */
+.contact-right {
+  flex: 1;
+  min-width: 320px;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #2a2a2a;
+}
+
+.contact-right h2 {
+  margin-bottom: 5px;
+}
+
+.contact-right p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea {
   padding: 12px;
-  margin-bottom: 15px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: none;
   outline: none;
+  background: #111;
+  color: #fff;
 }
 
-.contact-form form input:focus,
-.contact-form form textarea:focus {
-  border-color: orange;
+textarea {
+  min-height: 100px;
+  resize: none;
 }
 
+/* BUDGET BOX */
+.budget-box {
+  margin-top: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #00ffae;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00d18f;
+}
 
 /* FOOTER */
 
