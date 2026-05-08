@@ -85,12 +85,14 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 6rem;
+  text-align: left;
 }
 
 .hero p {
   margin: 20px 0;
   color: #ddd;
+  text-align: left;
 }
 
 
