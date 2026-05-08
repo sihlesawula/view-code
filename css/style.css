@@ -57,11 +57,9 @@ nav a:hover {
   height: 100vh;
   position: relative;
   overflow: hidden;
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
   padding: 0 8%;
 }
 
@@ -100,6 +98,7 @@ nav a:hover {
 .hero-content h1 {
   font-size: 5rem;
   line-height: 1;
+  margin-top: 150px;
   margin-bottom: 20px;
   font-weight: 800;
 }
@@ -110,7 +109,7 @@ nav a:hover {
 
 .hero-content p {
   font-size: 1.2rem;
-  color: #d1d1d1;
+  color: #fff;
   margin-bottom: 30px;
   max-width: 500px;
 }
@@ -120,13 +119,11 @@ nav a:hover {
 .btn-primary {
   display: inline-block;
   padding: 14px 32px;
-
   background: orange;
-  color: black;
-
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 50px;
 
   transition: 0.3s ease;
 }
