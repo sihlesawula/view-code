@@ -14,8 +14,8 @@ html {
 .navbar {
   position: fixed;
   width: 100%;
-  background: #fff;
-  color: #000;
+  background: #000;
+  color: #fff;
   padding: 25px 60px;
   display: flex;
   justify-content: space-between;
@@ -34,7 +34,7 @@ html {
 }
 
 nav a {
-  color: orange;
+  color: #fff;
   text-decoration: none;
   margin: 0 15px;
   font-weight: 500;
@@ -42,6 +42,7 @@ nav a {
 
 nav a:hover {
   color: orange;
+  text-decoration:underline;
 }
 
 .hamburger {
