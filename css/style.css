@@ -55,7 +55,7 @@ nav a:hover {
 
 .hero {
   height: 100vh;
-  background: url("./img/heroimage55.jpg") center/cover no-repeat;
+  background: url("../img/heroimage55.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -479,6 +479,8 @@ input[type="range"]::-webkit-slider-thumb {
   padding: 80px 20px;
   text-align: left;
 }
+
+
 
 .skills-box {
   display: flex;
