@@ -772,27 +772,180 @@ nav a:hover {
 
 }
 
-/* WHY US */
+/* =========================
+   WHY CHOOSE US
+========================= */
 
 .why-us {
-  padding: 80px 20px;
-  text-align: center;
+    padding: 110px 8%;
+    background: #0a0a0a;
+    color: white;
+    overflow: hidden;
 }
+
+/* HEADING */
+
+.why-heading {
+    margin-bottom: 70px;
+}
+
+.why-heading h2 {
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+/* Accent line */
+
+.why-heading h2::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+
+    width: 80px;
+    height: 4px;
+
+    background: orange;
+    border-radius: 20px;
+}
+
+.why-heading p {
+    color: #9e9e9e;
+    max-width: 650px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+
+/* GRID */
 
 .why-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap: 25px;
-  max-width: 1000px;
-  margin: auto;
-  margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
 }
 
+/* CARD */
+
 .why-item {
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+
+    background: linear-gradient(
+        145deg,
+        #111,
+        #181818
+    );
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #1f1f1f;
+
+    transition: 0.4s ease;
+
+    overflow: hidden;
+}
+
+/* Hover */
+
+.why-item:hover {
+    transform: translateY(-10px);
+    border: 1px solid orange;
+}
+
+/* Glow */
+
+.why-item::before {
+    content: "";
+
+    position: absolute;
+    top: -80px;
+    right: -80px;
+
+    width: 180px;
+    height: 180px;
+
+    background: rgba(255,165,0,0.06);
+
+    border-radius: 50%;
+
+    transition: 0.4s ease;
+}
+
+.why-item:hover::before {
+    transform: scale(1.2);
+}
+
+/* Number */
+
+.why-number {
+    font-size: 4rem;
+    font-weight: 800;
+
+    color: rgba(255,255,255,0.06);
+
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+/* TITLE */
+
+.why-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* TEXT */
+
+.why-item p {
+    color: #bcbcbc;
+    line-height: 1.8;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .why-heading h2 {
+        text-align: center;
+    }
+
+    .why-heading h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .why-heading p {
+        text-align: center;
+        margin: 30px auto 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .why-us {
+        padding: 90px 5%;
+    }
+
+    .why-heading h2 {
+        font-size: 2.3rem;
+    }
+
+    .why-item {
+        padding: 35px 25px;
+    }
+
 }
 
 
